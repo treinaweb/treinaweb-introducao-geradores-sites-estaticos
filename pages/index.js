@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import RecipeCard from '../components/RecipeCard/RecipeCard';
@@ -15,7 +13,7 @@ export default function Index(){
           name="Bolo de Cenoura"
           category="Bolos"
           picture="https://img.itdg.com.br/tdg/images/recipes/000/000/023/323619/323619_original.jpg?mode=crop&width=710&height=400"
-          link="/receitas/doces/bolo-de-cenoura"
+          link="/receitas/bolos/bolo-de-cenoura"
         />
 
         <RecipeCard

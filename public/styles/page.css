@@ -33,3 +33,26 @@ body{
 .recipe-name{
     padding: 4px 12px;
 }
+
+
+.recipe-body{
+    padding: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.recipe-body-name{
+    text-align: center;
+}
+
+.recipe-body-picture{
+    max-width: 100%;
+}
+
+.recipe-body h2{
+    color: #ff6a28;
+}
+
+.recipe-body li{
+    padding: 4px;
+}
