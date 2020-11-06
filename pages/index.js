@@ -1,66 +1,69 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Link from 'next/link';
 
-export default function Home() {
+export default function Index(){
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>TreinaCook</title>
+        <link rel="stylesheet" href="/styles/page.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Olá Web Developers!
-        </h1>
-
-
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+      
+      <header className="header" >
+        <Link href="/" >
+          <a>
+            <img alt="Logo TreinaCook" src="/img/logo.svg" />
           </a>
+        </Link>
+      </header>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+      <main>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+        <figure className="recipe-card" >
+          <Link href="/receitas/doces/brigadeiro" >
+            <a>
+              <img className="recipe-picture" src="https://cdn.panelinha.com.br/receita/958014000000-Brigadeiro.jpg" />
+            </a>
+          </Link>
+          <div className="recipe-category" >Doces</div>
+          <figcaption className="recipe-name" >Brigadeiro</figcaption>
+        </figure>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <figure className="recipe-card" >
+          <Link href="/receitas/doces/brigadeiro" >
+            <a>
+              <img className="recipe-picture" src="https://cdn.panelinha.com.br/receita/958014000000-Brigadeiro.jpg" />
+            </a>
+          </Link>
+          <div className="recipe-category" >Doces</div>
+          <figcaption className="recipe-name" >Brigadeiro</figcaption>
+        </figure>
+
+        <figure className="recipe-card" >
+          <Link href="/receitas/doces/brigadeiro" >
+            <a>
+              <img className="recipe-picture" src="https://cdn.panelinha.com.br/receita/958014000000-Brigadeiro.jpg" />
+            </a>
+          </Link>
+          <div className="recipe-category" >Doces</div>
+          <figcaption className="recipe-name" >Brigadeiro</figcaption>
+        </figure>
+
+        <figure className="recipe-card" >
+          <Link href="/receitas/doces/brigadeiro" >
+            <a>
+              <img className="recipe-picture" src="https://cdn.panelinha.com.br/receita/958014000000-Brigadeiro.jpg" />
+            </a>
+          </Link>
+          <div className="recipe-category" >Doces</div>
+          <figcaption className="recipe-name" >Brigadeiro</figcaption>
+        </figure>
+
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <footer className="footer" >
+        &copy; TreinaCook
       </footer>
     </div>
   )

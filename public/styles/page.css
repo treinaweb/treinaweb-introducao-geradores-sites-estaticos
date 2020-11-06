@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.header, .footer{
+    background-color: #ff6a28;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+
+
+.recipe-card{
+    text-align: center;
+    min-width: 320px;
+    max-width: 345px;
+    margin: 16px auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+.recipe-picture{
+    max-width: 100%;
+}
+
+.recipe-category{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #B8B8B8;
+    padding: 4px 12px;
+}
+
+.recipe-name{
+    padding: 4px 12px;
+}
