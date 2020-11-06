@@ -1,70 +1,46 @@
-import Head from 'next/head';
 import Link from 'next/link';
+
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import RecipeCard from '../components/RecipeCard/RecipeCard';
 
 export default function Index(){
   return (
     <div>
-      <Head>
-        <title>TreinaCook</title>
-        <link rel="stylesheet" href="/styles/page.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-      </Head>
-      
-      <header className="header" >
-        <Link href="/" >
-          <a>
-            <img alt="Logo TreinaCook" src="/img/logo.svg" />
-          </a>
-        </Link>
-      </header>
+      <Header title="TreinaCook - Receitas" />
 
       <main>
 
-        <figure className="recipe-card" >
-          <Link href="/receitas/doces/brigadeiro" >
-            <a>
-              <img className="recipe-picture" src="https://cdn.panelinha.com.br/receita/958014000000-Brigadeiro.jpg" />
-            </a>
-          </Link>
-          <div className="recipe-category" >Doces</div>
-          <figcaption className="recipe-name" >Brigadeiro</figcaption>
-        </figure>
+        <RecipeCard
+          name="Bolo de Cenoura"
+          category="Bolos"
+          picture="https://img.itdg.com.br/tdg/images/recipes/000/000/023/323619/323619_original.jpg?mode=crop&width=710&height=400"
+          link="/receitas/doces/bolo-de-cenoura"
+        />
 
-        <figure className="recipe-card" >
-          <Link href="/receitas/doces/brigadeiro" >
-            <a>
-              <img className="recipe-picture" src="https://cdn.panelinha.com.br/receita/958014000000-Brigadeiro.jpg" />
-            </a>
-          </Link>
-          <div className="recipe-category" >Doces</div>
-          <figcaption className="recipe-name" >Brigadeiro</figcaption>
-        </figure>
+        <RecipeCard
+          name="Brigadeiro"
+          category="Doce"
+          picture="https://cdn.panelinha.com.br/receita/958014000000-Brigadeiro.jpg"
+          link="/receitas/doces/brigadeiro"
+        />
+        <RecipeCard
+          name="Bolinho de Chuva" 
+          category="Lanches"
+          picture="https://img.itdg.com.br/tdg/images/recipes/000/014/950/329096/329096_original.jpg?mode=crop&width=710&height=400" 
+          link="/receitas/lanches/bolinho-de-chuva"
+        />
+        <RecipeCard
+          name="Molho Branco" 
+          category="Molhos"
+          picture="https://img.itdg.com.br/tdg/images/recipes/000/044/199/332851/332851_original.jpg?mode=crop&width=710&height=400" 
+          link="/receitas/molhos/molho-branco"
+        />
 
-        <figure className="recipe-card" >
-          <Link href="/receitas/doces/brigadeiro" >
-            <a>
-              <img className="recipe-picture" src="https://cdn.panelinha.com.br/receita/958014000000-Brigadeiro.jpg" />
-            </a>
-          </Link>
-          <div className="recipe-category" >Doces</div>
-          <figcaption className="recipe-name" >Brigadeiro</figcaption>
-        </figure>
-
-        <figure className="recipe-card" >
-          <Link href="/receitas/doces/brigadeiro" >
-            <a>
-              <img className="recipe-picture" src="https://cdn.panelinha.com.br/receita/958014000000-Brigadeiro.jpg" />
-            </a>
-          </Link>
-          <div className="recipe-category" >Doces</div>
-          <figcaption className="recipe-name" >Brigadeiro</figcaption>
-        </figure>
 
       </main>
 
-      <footer className="footer" >
-        &copy; TreinaCook
-      </footer>
+      <Footer />
     </div>
   )
 }
